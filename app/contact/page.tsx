@@ -71,7 +71,16 @@ export default function Contact() {
                        <span className="text-[10px] text-gray-400 mr-2 uppercase tracking-tighter">Tel:</span> 
                        <a href="tel:054-954-9683" className="hover:text-brand-gold transition-colors">(054) 954-9683</a>
                      </p>
-                     <p className="whitespace-nowrap sm:whitespace-normal text-[11px] sm:text-sm">대구시 북구 서변로 83-1 2층</p>
+                     <p className="whitespace-nowrap sm:whitespace-normal text-[11px] sm:text-sm">
+                       <a 
+                         href="https://map.naver.com/v5/search/대구광역시%20북구%20서변로%2083-1%202층" 
+                         target="_blank" 
+                         rel="noopener noreferrer"
+                         className="hover:text-brand-gold transition-colors"
+                       >
+                         대구시 북구 서변로 83-1 2층
+                       </a>
+                     </p>
                    </div>
                 </div>
               </div>

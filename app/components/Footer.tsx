@@ -35,7 +35,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-brand-gold mr-3 shrink-0" />
-                <span className="text-gray-400 text-sm">대구시 북구 서변로 83-1 2층</span>
+                <a 
+                  href="https://map.naver.com/v5/search/대구광역시%20북구%20서변로%2083-1%202층" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 text-sm hover:text-brand-gold transition-colors"
+                >
+                  대구시 북구 서변로 83-1 2층
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-brand-gold mr-3 shrink-0" />

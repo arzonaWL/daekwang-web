@@ -39,11 +39,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-brand-gold mr-3 shrink-0" />
-                <span className="text-gray-400 text-sm">010-5588-8123 / (054) 954-9683</span>
+                <div className="text-gray-400 text-sm flex gap-2">
+                  <a href="tel:010-5588-8123" className="hover:text-brand-gold transition-colors">010-5588-8123</a>
+                  <span>/</span>
+                  <a href="tel:054-954-9683" className="hover:text-brand-gold transition-colors">(054) 954-9683</a>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-brand-gold mr-3 shrink-0" />
-                <span className="text-gray-400 text-sm">cym5588@naver.com</span>
+                <a href="mailto:cym5588@naver.com" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">cym5588@naver.com</a>
               </li>
             </ul>
           </div>

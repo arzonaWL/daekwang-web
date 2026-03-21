@@ -50,8 +50,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-brand-gold/5 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs gap-4">
-          <p>© 2024 Daekwang Architecture. All Rights Reserved.</p>
-          <p>대표자: 최유모 | 상호: 대광건축</p>
+          <p>© 2026 Daekwang Architecture. All Rights Reserved.</p>
+          <p>소장: 최유모 | 상호: 대광건축</p>
         </div>
       </div>
     </footer>

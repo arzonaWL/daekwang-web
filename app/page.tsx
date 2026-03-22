@@ -56,16 +56,23 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { title: "건축 공사", icon: Building2, desc: "주거 및 상업 시설 신축" },
-              { title: "토목 공사", icon: Shovel, desc: "기초 및 지반 강화 공사" },
-              { title: "철거 공사", icon: Trash2, desc: "안전하고 신속한 철거" },
-              { title: "인테리어", icon: Hammer, desc: "공간의 가치를 높이는 디자인" },
+              { id: "new-construction", title: "건축 공사", icon: Building2, desc: "주거 및 상업 시설 신축" },
+              { id: "civil-works", title: "토목 공사", icon: Shovel, desc: "기초 및 지반 강화 공사" },
+              { id: "demolition", title: "철거 공사", icon: Trash2, desc: "안전하고 신속한 철거" },
+              { id: "interior", title: "인테리어", icon: Hammer, desc: "공간의 가치를 높이는 디자인" },
             ].map((service, idx) => (
-              <div key={idx} className="p-8 border border-brand-gold/10 bg-white/5 hover:border-brand-gold/40 transition-all group">
+              <Link 
+                key={idx} 
+                href={`/services/${service.id}`}
+                className="p-8 border border-brand-gold/10 bg-white/5 hover:border-brand-gold/40 transition-all group block cursor-pointer"
+              >
                 <service.icon className="h-10 w-10 text-brand-gold mb-6 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
                 <p className="text-gray-500 text-sm">{service.desc}</p>
-              </div>
+                <div className="mt-4 text-brand-gold text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                  자세히 보기 <ArrowRight className="h-3 w-3" />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
